@@ -1,0 +1,115 @@
+
+/*Có 3 cách áp dụng CSS vào HTML
+Cách 1 - Inline: Viết trực tiếp vào thẻ HTML thông qua attribute style
+Cách 2 - Internal: Viết CSS vào thẻ <style> 
+Cách 3 - External: Viết CSS vào file.css ( cách tốt nhất )*/
+
+
+
+
+/* 1. Selector theo tên thẻ (element selector) 
+p {
+  color: blue;    (áp dụng cho tất cả thẻ <p>)
+}
+
+ 2. Selector theo class 
+.myClass {
+  font-size: 18px;   (áp dụng cho thẻ có class="myClass")
+}
+
+ 3. Selector theo id 
+#myId {
+  background-color: yellow;   (áp dụng cho thẻ có id="myId")
+}
+
+4. Selector kết hợp (descendant selector) 
+div p {
+  color: red;    (áp dụng cho <p> nằm trong <div> )
+}
+
+ 5. Selector nhóm (group selector) 
+h1, h2, h3 {
+  font-family: Arial;    (áp dụng cho cả h1, h2, h3 )
+}
+
+ 6. Selector toàn cục (universal selector) 
+* {
+  margin: 0;    (áp dụng cho tất cả phần tử )
+}
+*/
+
+
+p{
+          background-color: rgba(179, 178, 165, 0.5); color: rgb(19, 3, 3);
+          font-family: sans-serif, Times New Roman;
+          background: linear-gradient(to left, skyblue, lightgreen);
+    background-attachment: fixed;
+     }
+
+
+.le{
+         font-style: italic;
+     }
+
+.chan{
+       font-weight: 400;
+}
+
+#spc{
+     text-decoration: dotted underline;
+}
+
+.border{
+  border-style: solid;
+  border-color: chocolate;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+body{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20241015/pngtree-abstract-watercolor-background-with-pastel-colors-like-light-blue-and-pink-image_16394760.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#box1{
+      width: 150px;
+      height: 150px;
+      border-style: double;
+      background-color: burlywood;
+      padding: 40px;
+
+      transform: translateX(100px);
+      transform: skew(5deg);      
+}
+  
+
+#box2{
+      width: 150px;
+      height: 150px;
+      border-style:inherit;
+      background-color:darkseagreen;
+      margin-top: 10px;
+      position: sticky;
+      top: 10px;
+      bottom: 10px;
+}
+
+h1{
+   text-shadow: 5px 5px 10px;
+}
+
+h2{
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+button:hover{
+ background-color: palevioletred;
+}
+button:active{
+  background-color: green;
+}
+     
