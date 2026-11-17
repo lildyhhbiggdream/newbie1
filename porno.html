@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Library</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <h1 class="page-title">My Video Library</h1>
+
+    <div class="video-container">
+
+        <!-- Card 1 -->
+        <div class="video-card">
+            <div class="video-player" id="player1">
+                <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDy3FSl1d0QpLznR3JM7bJpSVTHwTikUVY197yjqhsRA&s=10" alt="Video 1">
+                <button class="play-button" aria-label="Phát video 1" onclick="playVideo('player1', 'https://www.pornhub.org/embed/67249ebe67b2a')">
+                    ▶
+                </button>
+            </div>
+            <div class="video-info">
+                <p>Video 1 - Embedded Player</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="video-card">
+            <div class="video-player" id="player2">
+                <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDy3FSl1d0QpLznR3JM7bJpSVTHwTikUVY197yjqhsRA&s=10" alt="Video 2">
+                <button class="play-button" aria-label="Phát video 2" onclick="playVideo('player2', 'https://www.pornkut.com/videos/231097/pale-slender-babe-pounded-in-tight-black-dress/')">
+                    ▶
+                </button>
+            </div>
+            <div class="video-info">
+                <p>Video 2 - Embedded Player</p>
+            </div>
+        </div>
+
+        <!-- Card 3: Link Youtube đã được đổi sang dạng embed chuẩn -->
+        <div class="video-card">
+            <div class="video-player" id="player3">
+                <img class="thumbnail" src="https://img.youtube.com/vi/2DJdsJfJ0kg/hqdefault.jpg" alt="Video 3">
+                <button class="play-button" aria-label="Phát video 3" onclick="playVideo('player3', 'https://www.youtube.com/embed/2DJdsJfJ0kg')">
+                    ▶
+                </button>
+            </div>
+            <div class="video-info">
+                <p>Video 3 - Tại sao thật tệ khi yêu...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function playVideo(playerId, videoUrl) {
+            const playerContainer = document.getElementById(playerId);
+
+            if (!playerContainer) return;
+
+            // Xử lý tự động chuyển đổi link Youtube thường thành link Embed
+            if (videoUrl.includes("youtube.com/watch?v=")) {
+                const videoId = videoUrl.split("v=")[1].split("&")[0];
+                videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            }
+
+            // Chèn Iframe vào player
+            playerContainer.innerHTML = `
+                <iframe
+                    src="${videoUrl}"
+                    title="Video player"
+                    width="100%"
+                    height="100%"
+                    style="border:none;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            `;
+        }
+    </script>
+
+</body>
+</html>

@@ -103,7 +103,7 @@ h1{
 }
 
 h2{
-  box-shadow: 5px 5px 5px lightgrey;
+  box-shadow: 5px 5px 5px rgb(160, 104, 104);
 }
 
 button:hover{
@@ -112,4 +112,40 @@ button:hover{
 button:active{
   background-color: green;
 }
-     
+
+.box{
+  background-color: darkorange;
+  height: 40px;
+  margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+    .iframe-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ép tối đa 2 cột (2 frame) trên 1 dòng */
+            gap: 15px; /* Khoảng cách giữa các khung */
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+}
