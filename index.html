@@ -1,258 +1,245 @@
-<!DOCTYPE html><!--Định dạng file html-->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <title> MineWeb</title>
- <meta charset="utf-8">
- <meta name="Home Description" content="Home">
- <meta name="keywords" content="HTML CSS Web Tutorial Beginner Understandable Quick">
- <meta name="author" content="Xuy">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="style.css">
-
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
 </head>
-<div id="navbar"></div>
 
-<main class="container py-4">
-    <h1>HOME</h1>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="nav.js"></script>
 <body>
-     <h1>Tập code web</h1>
-     <h2>A. Các thẻ cơ bản</h2>
-     <h3>Tiêu đề nhỏ dần h1 > h2 > h3 >...>hn </h3>
 
-<!--<br> = break xuống dòng -->
-<h3 > Học bổng STEM </h3>
-<p > Năm 2026, Chính phủ Việt Nam đã ban hành chính sách học bổng mới cho sinh viên, học viên cao học và nghiên cứu sinh trong các ngành STEM (khoa học, kỹ thuật, công nghệ chiến lược). Mức học bổng dao động từ 3,7 triệu đến 8,4 triệu đồng/tháng, áp dụng từ tháng 9/2026.</p>
-<br>
-<h3> 1.Đối tượng áp dụng</h3> 
-<p class="border">- Sinh viên đại học, học viên cao học, nghiên cứu sinh theo học các ngành khoa học cơ bản, kỹ thuật then chốt và công nghệ chiến lược.<br>
-- Bao gồm các ngành: Toán, Sinh học, Vật lý kỹ thuật, Công nghệ thông tin, Kỹ thuật điện – điện tử – viễn thông, Kỹ thuật vật liệu, Xây dựng, Mỏ…</p>
-<br>
-<h3> 2.Mức học bổng </h3> 
-<p> Sinh viên đại học: 3,7 – 5 triệu đồng/tháng.
-<br>
-Học viên thạc sĩ: 5,5 – 7,4 triệu đồng/tháng.
-<br>
-Nghiên cứu sinh tiến sĩ: tối đa 8,4 triệu đồng/tháng.
-<br>
-Thời gian cấp: 10 tháng/năm cho sinh viên, 12 tháng/năm cho học viên cao học và nghiên cứu sinh
-</p>
+<nav class="navbar navbar-expand-md bg-secondary">
+  <div class="container-fluid">
+    <a href="index.html" class="navbar-brand text-white">Mineweb</a>
 
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<br>
-<h3> 3.Thời gian hưởng </h3> 
-<p>
-Tối đa 5 năm đối với sinh viên đại học.
-<br>
-2 năm đối với học viên cao học.
-<br>
-3 năm đối với nghiên cứu sinh.
-</p>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html">Playground</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="porno.html">pornoh</a>
+        </li>
+      </ul>
 
+      <!-- Nút quay lại -->
+      <button type="button" class="btn btn-outline-light btn-sm" onclick="goBack()">
+        ← Quay lại
+      </button>
+    </div>
+  </div>
+</nav>
 
-<br>
-<h3> 4. Tiêu chuẩn xét duyệt</h3> 
-<p>
-Điểm trung bình cộng tổ hợp xét tuyển từ 22,50 trở lên (không tính điểm ưu tiên).
-<br>
-Thuộc nhóm 30% thí sinh có điểm trúng tuyển cao nhất của ngành.
-<br>
-Hoặc đạt giải nhất, nhì, ba trong các kỳ thi học sinh giỏi quốc gia/quốc tế.
-</p>
+<script>
+  function goBack() {
+    if (document.referrer && history.length > 1) {
+      history.back();
+    } else {
+      window.location.href = "index.html"; // không có trang trước thì về Home
+    }
+  }
+</script>
 
-
-
-<hr>
-<h2> B. Định dạng văn bản</h2>
-<p>Văn bản <b> in đậm</b></p>
-<p>Văn bản <i> in nghiêng</i></p>
-<p>Văn bản <big> lớn</big></p>
-<p>Văn bản <small> nhỏ</small></p>
-<p>Văn bản <sub> subscript</sub></p>
-<p>Văn bản <ins> insert </ins></p>
-<p>Văn bản <del> deleted</del></p>
-<p>Văn bản <mark> highlight </mark></p>
+<!-- Bootstrap JS: bắt buộc để nút menu (toggler) hoạt động -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<hr>
-<h2> C. Gắn hyperlink/ gửi mail</h2>
-<a href="https://heovl.im/" target="_blank"> Google  </a>
-    <!-- "_self": mở trong tab hiện tại, "_blank": mở trong tab mới-->
- <br>
-<a class="btn btn-warning"  href="../page2.html" target="_blank"> Page2 </a>
-  
 
-<hr>
-<h2>D. Gắn image</h2>
-<a href="https://wimg.rule34.xxx//images/4807/53bb763a3a4bd8e74c26f2ddb412ff43.jpeg?18480103" target="_blank">
-<img src="/images/rabbit.jpg" width="300px" alt="rabbit" title="niggaaa sybau">
+<h1 style="text-align: center"> bootstrap </h1>
+
+    
+
+<div class="container">
+<div class="row">
+          <div class="col">
+<div class="box">
+
+</div>
+            </div>
+          <div class="col-lg-4 col-2 col-sm-12">
+<div class="box">
+
+</div>
+          </div>
+
+ <div class="col">
+<div class="box">
+
+</div>
+          </div>
+
+
+</div>
+<div class="row row-cols-4 gx-1">
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+    <div class="col">
+        <div class="box"></div>
+    </div>
+   
+
+</div>
+
+<div class="card" style="margin-top: 10px;">
+    <div class="card-body">
+        <div class="card-title">
+            <h5 style="text-align: center;">Học bổng STEM 2026</h5>
+        </div>
+    <div class="card-subtitle" style="text-align: center; text-decoration:underline;">
+            Có hiệu lực từ tháng 9/2026
+        </div>
+<div class="card-text">
+            Mức điểm xét hưởng chính sách học bổng theo Nghị định 179 như sau:
+        
+        <table class="table table-hover table-primary">
+<tr class="table-success"> 
+<th> Thứ tự </th>
+<th> Nhóm ngành </th>
+<th> Tuyển sinh 2025 </th>
+<th> Tuyển sinh 2026 </th>
+</tr>
+
+<tr> 
+<th> 1 </th>
+<th> Công nghệ thông tin </th>
+<th> 22,5 </th>
+<th> 22,5 </th>
+</tr>
+
+<tr> 
+<th> 2 </th>
+<th> Kỹ thuật cơ khí và cơ kỹ thuật </th>
+<th> 23,3 </th>
+<th> 23,6 </th>
+</tr>
+
+<tr> 
+<th> 3 </th>
+<th> Kỹ thuật điện, điện tử và viễn thông </th>
+<th> 24,1 </th>
+<th> 24,35 </th>
+</tr>
+
+<tr> 
+<th> 4 </th>
+<th> Kỹ thuật hóa học, vật liệu, luyện kim và môi trường </th>
+<th> 24 </th>
+<th> 23,95 </th>
+</tr>
+
+<tr> 
+<th> 5 </th>
+<th> Vật lý kỹ thuật </th>
+<th> 24,35 </th>
+<th> 24,35 </th>
+</tr>
+
+<tr> 
+<th> 6 </th>
+<th> Toán học </th>
+<th> 24,1 </th>
+<th> 23,6 </th>
+</tr>
+
+<tr> 
+<th> 7 </th>
+<th> Sinh học </th>
+<th> 22,5 </th>
+<th> 22,5 </th>
+</tr>
+
+<tr> 
+<th> 8 </th>
+<th> Xây dựng </th>
+<th> 22,5 </th>
+<th> 22,5 </th>
+</tr>
+
+        </table>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+    </div>
+
+</div>
+
+
+<button class="btn btn-secondary" style="margin-top: 10px;"
+data-bs-toggle="modal" data-bs-target="#modal"
+> Open</button>
+<div class="modal" id="modal">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header"> Hảo hán</div>
+<div class="modal-body">
+    <img src="/images/rabbit.jpg" class="img-fluid">
+</div>
+
+<div class="modal-footer"> Cre: Xuyt </div>
+
+
+</div>
+</div>    
+</div>
+
+<a href="https://vnexpress.net/cong-bo-diem-xet-hoc-bong-3-7-5-5-trieu-dong-cho-sinh-vien-ky-thuat-cong-nghe-5123300.html"
+   target="_blank" 
+   class="btn btn-warning"
+    style="margin-top: 10px;">
+   
+   Chi tiết 
+
 </a>
+   
 
-<hr>
-<h2> E. Gắn audio </h2>
-<audio loop muted controls src="/audio/The One That Got Away.mp3"></audio>
-
-<div id="box2">
-Box2<br>
-GAY LÀ 1 TỘI ÁC
-</div>
-
-
-<hr>
-<h2> F. List </h2>
-<!--Các loại list-->
-
-<h3> Unordered list </h3>
-<ul>
-     <li> Vinfast </li>
-     <li> Mercedie </li>
-     <li> Porche </li>
-
-</ul>
-
-<h3> Ordered list </h3>
-<ol type="I"> 
-     <li> Iphone 
-          <ol type="1">
-              <li> Ip 13 </li> 
-              <li> Ip 14 </li> 
-              <li> Ip 15 </li> 
-              <li> Ip 16 </li> 
-              <li> Ip 17 </li> 
-          </ol>
-     </li>
-     <li> Samsung </li>
-     <li> Xiaomi </li>
-</ol>
-
-<h3> Description list </h3>
-<dt>Acer nitro V16 AI </dt>
-<dd> Ram: 16GB DDR5</dd>
-<dd> SSD: 512GB</dd>
-<dd> CPU: Ryzen 5 240</dd>
-<dd> GPU: NVIDIA 5050 8GB 100W </dd>
-
-
-<hr>
-<h2> G. Table </h2>
-<table bgcolor="black">
-     <tr bgcolor="grey">
-          <th> Model </th>
-          <th> CPU </th>
-          <th> GPU </th>
-          <th> Ram </th>
-          <th> SSD </th>
-
-     </tr>
-
-     <tr bgcolor="lightgrey">
-          <td> Acer nitro V16 AI </td>
-          <td> Ryzen 5 240 </td>
-          <td> NVIDIA 5050 8GB 100W </td>
-          <td> 16GB DDR5 </td>
-          <td> 512GB </td>
-
-     </tr>
-
-     <tr bgcolor="lightgrey">
-          <td> Acer shadow knight </td>
-          <td> intel core i7-13900HX  </td>
-          <td> NVIDIA 5060 8GB 115W </td>
-          <td> 16GB DDR5 </td>
-          <td> 1TB </td>
-
-     </tr>
-</table>
-
-<hr>
-
-<h2> Iframe - nhúng 1 nội dung vào web hiện tại(ads) </h2>
-
-<div style="max-width: 1500px; margin: 0 auto; aspect-ratio: 16 / 9;">
-<iframe  height="500px" width="100%" src="ads.html" >     </iframe>
-</div>
-
-
-<form>
-<h2> Đăng nhập </h2>
-
-<div>
-<label for="fname" >  First name: </label>
-<input type="text" id="fname" name="fname"<br>
-</div>
-
-<div>
-<label for="born">Date: </label>
-<input type="date" id="born" date="born"<br>
-</div>
-
-<div>
-<label for="mssv">Mssv: </label>
-<input type="number" id="mssv" mssv="mssv"<br>
-</div>
-
-<div>
-<label for="mail">Mail: </label>
-<input type="text" id="mail" mail="mail"<br>
-</div>
-
-<div>
-<label for="mk">Mật khẩu: </label>
-<input type="password" id="mk" mật khẩu="mk"<br>
-</div>
-
-<div>
-     <select name="year">
-          <option value="K71">K71</option>
-          <option value="K70">K70</option>
-          <option value="K69+">K69+</option>
-     </select>
-</div>
-
-<div>
-     <input type="radio" name="role" value="gay"> gay
-     <input type="radio" name="role" value="straight"> straight
-
-</div>
-
-<input type="Submit">
-<input type="Reset">
-<button> Submit for gay </button>
-
-</form>
-
-<div id="box1">
- Box1
- SSIBF là quỹ trái phiếu của SSIAM, đặc điểm là ổn định, tăng đều qua các năm, ít biến động. Lợi suất thường quanh mức 4–6%/năm, gần giống gửi tiết kiệm nhưng an toàn hơn và có thể cao hơn một chút.
 
 </div>
 
 
 
-
-
-  </body>
-
-
-<hr>
-<h2> H. Background color</h2>
-<body style="background-color: bisque;">
-     
-     <h3 style="color: coral;"> Konichiwa</h3>
-     <h3 style="color: rgb(131, 44, 160);"> Watashiwa Huy desu</h3>
-     <h3 style="color: rgb(70, 130, 109);"> Giorosco oneigeysimas </h3>
 
 </body>
-
-
-
 
 
 </html>
